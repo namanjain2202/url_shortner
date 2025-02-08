@@ -10,7 +10,7 @@ class Api::V1::UrlsController < ApplicationController
       end
     end
     
-    def show
+    def shos
       url = ShortenedUrl.find_by(short_code: params[:short_code])
       if url && (url.expires_at.nil? || url.expires_at > Time.current)
         track_click(url)
