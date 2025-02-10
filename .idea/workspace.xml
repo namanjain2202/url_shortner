@@ -5,22 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="166f2b53-b67f-4b52-9e8b-6a3e743de152" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.github/workflows/ci_cd.yml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/controllers/application_controller.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/api/v1/url_controllers.rb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/migrate/20250204123456_create_users.rb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/migrate/20250204123500_create_urls.rb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/migrate/20250204123530_create_click_analytics.rb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/migrate/20250204123545_create_api_tokens.rb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/migrate/20250204123600_create_rate_limits.rb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/migrate/20250204123615_create_admin_activities.rb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/shortened_url.rb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/url_click.rb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/user.rb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/requests/url_shortner_spec.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/admin/shortened_urls.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/admin/shortened_urls.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/shortened_urls_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/shortened_urls_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/shortened_url.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/shortened_url.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,6 +21,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3

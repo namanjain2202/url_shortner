@@ -1,60 +1,64 @@
-# README.md
+Here is the complete `README.md` file for your URL shortening service project:
 
-# URL Shortener Service
+```markdown
+# URL Shortener
 
-## Overview
-A simple URL shortening service built using Ruby on Rails. It allows users to generate short links, track analytics, set expiration dates, and manage URLs via an API.
+This is a URL shortening service built with Ruby on Rails.
 
-## Features
-- User Authentication (Devise & JWT)
-- Shorten URLs with custom aliases
-- Track URL analytics (clicks, referrer, geolocation, device type)
-- Set expiration dates for links
-- Rate limiting to prevent abuse
-- Admin dashboard for monitoring
-- Secure API with token-based authentication
-- Comprehensive RSpec tests
-- CI/CD setup with GitHub Actions
+## Requirements
 
-## Installation
+- Ruby >= 2.7.0
+- Rails ~> 7.0.0
+- PostgreSQL
+
+## Setup
+
 1. Clone the repository:
    ```sh
-   git clone https://github.com/yourusername/url_shortener.git
+   git clone https://github.com/your-username/url_shortener.git
    cd url_shortener
    ```
+
 2. Install dependencies:
    ```sh
    bundle install
    ```
+
 3. Set up the database:
    ```sh
-   rails db:create db:migrate
+   rails db:create
+   rails db:schema:load
    ```
-4. Start the server:
+
+4. Start the Rails server:
    ```sh
    rails server
    ```
 
-## API Endpoints
-### Authentication
-- `POST /users/sign_in` - User login
-- `POST /users/sign_up` - User registration
-
-### URL Shortening
-- `POST /api/v1/urls` - Create a shortened URL
-- `GET /api/v1/urls/:short_code` - Retrieve original URL
-
 ## Running Tests
-Run RSpec tests:
+
+To run the test suite, use the following command:
 ```sh
 bundle exec rspec
 ```
 
-## Deployment
-The project includes a CI/CD pipeline with GitHub Actions. To deploy:
-```sh
-git push origin main
-```
+## API Documentation
+
+API documentation is available at `/api-docs` using Rswag.
+
+## Admin Dashboard
+
+The admin dashboard is available at `/admin` using ActiveAdmin.
+
+## Contributing
+
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature-branch`).
+3. Commit your changes (`git commit -am 'Add new feature'`).
+4. Push to the branch (`git push origin feature-branch`).
+5. Create a new Pull Request.
 
 ## License
-MIT License
+
+This project is licensed under the MIT License.
+```

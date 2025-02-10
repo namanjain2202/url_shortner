@@ -1,19 +1,21 @@
 class ShortenedUrl < ApplicationRecord
-  belongs_to :user
-  has_many :url_clicks, dependent: :destroy
+    belongs_to :user
 
-  validates :original_url, presence: true
-  validates :short_code, uniqueness: true
+    before_create :generate_shortened_url
 
-  before_create :generate_short_code
+    validates :custom_alias, uniqueness: true, allow_nil: true
 
-  private
+    scope :active, -> { where('expires_at IS NULL OR expires_at > ?', Time.current) }
 
-  def generate_short_code
-    self.short_code = SecureRandom.uuid[0..5] if short_code.blank?
+    def generate_shortened_url
+      self.shortened_url = SecureRandom.hex(5) unless custom_alias.present?
+    end
+
+    def track_click(request)
+      self.clicks += 1
+      self.referrer = request.referrer
+      self.geolocation = Geocoder.search(request.remote_ip).first&.city
+      self.device_type = request.user_agent
+      save
+    end
   end
-
-  def active?
-    expires_at.nil? || expires_at > Time.current
-  end
-end
