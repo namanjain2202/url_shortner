@@ -1,0 +1,9 @@
+<%= search_form_for @q do |f| %>
+  <%= f.label :original_url_cont %>
+  <%= f.search_field :original_url_cont %>
+  <%= f.submit 'Search' %>
+<% end %>
+
+<% @shortened_urls.each do |url| %>
+  <p><%= url.original_url %></p>
+<% end %>
